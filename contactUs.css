@@ -82,7 +82,7 @@ main{
     top: 30%;
     left: calc(50% - 53vh);
     align-items: center;
-    transition: 0.s ease-in-out;
+    transition: 0.2s ease-in-out;
     box-shadow: 2vh 2vh 7vh rgb(161, 161, 161);
 }
 main:hover{
