@@ -78,7 +78,7 @@ main:hover{
 }
 
 main img{
-    width: 20vh;
+    width: 22vh;
     height: 20vh;
     border-radius: 5%;
     position: relative;
@@ -91,6 +91,7 @@ main img{
     display: flex;
     flex-direction:row;
     gap: 10px;
+    left: 10%;
   }
   
   input[type="radio"] {
