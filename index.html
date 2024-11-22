@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <title>Saar's Ecommerce Site</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav id="nav">
+        <div>
+          <a href="index.html"
+            ><img id="logo" src="logo.jpg" alt="site's logo" height="100%"
+          /></a>
+        </div>
+
+        <div id="item-search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search here for more"
+          />
+          <span><i class="fa-solid fa-magnifying-glass search-icon"></i></span>
+        </div>
+        <div>
+          <a href="#destination" id="move-des">Our Products</a>
+        </div>
+      </nav>
+      <header>
+        <div>
+          <h1>Laptops, Phones and what's Between</h1>
+          <video id="video" src="hero-vid.mp4" autoplay loop muted></video>
+        </div>
+      </header>
+
+      <main id="destination">
+        <div class="grid-container">
+          <div class="item first">
+            <img id="iphone" src="iphone.jpg" alt="an Iphone 16 pro" />
+
+            <span>
+              <b>iPhone 16 Pro</b>
+            </span>
+            <b id="price">999.99$</b>
+
+            <a href="iphone.html"
+              ><button type="button" draggable="false">Click Here</button></a
+            >
+          </div>
+          <div class="item second">
+            <div id="img2">
+              <img src="Lenovo-T480-s.png" alt="a Laptop" draggable="false" />
+            </div>
+            <div>
+              <img
+                id="deal"
+                src="hot deal.png"
+                alt="hot deal icon"
+                draggable="false"
+              />
+            </div>
+            <div>
+              <span id="laptop-name"><b>Lenovo T480-S</b></span>
+            </div>
+            <div>
+              <span id="laptop-price"
+                ><b><del>1500$</del> 999.99$</b></span
+              >
+            </div>
+            <a href="laptop.html"><button>Click Here</button></a>
+          </div>
+          <div class="item third">
+            <img
+              src="razer headset.png"
+              alt="a razer headset"
+              draggable="false"
+            />
+            <span id="razer-name"><b>Razer Kraken X Lite</b></span>
+            <span id="razer-price"><b>29.99$</b></span>
+            <a href="headset.html"><button>Click Here</button></a>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-flex">
+          <a href="#video">Back To the Top</a>
+          <hr />
+          <a href="contactUs.html">Contact Us</a>
+          <hr />
+          <a href="er">About</a>
+        </div>
+        <span>© Saar's Ecommerce all rights deserved</span>
+      </footer>
+    </div>
+  </body>
+</html>

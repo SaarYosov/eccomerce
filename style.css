@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    height: auto; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+    background-color: black;
+}
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+a{
+    text-decoration: dashed;
+    color: whitesmoke;
+}
+
+
+#move-des{
+    position: relative;
+    right: 1.5vw; 
+}
+
+.main-container{
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100vw;
+    display: inline-block;
+    color: white;
+}
+#nav{
+    
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    position: fixed;
+    height: 10vh;
+    top: 0%;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(17, 17, 17);
+    z-index: 3;
+
+}
+#logo{
+    transition: 1.4s ease-in-out;
+}
+#logo:hover{
+    transform: rotate(720deg);
+}
+#search{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(17, 17, 17);
+    transition: ease-in-out 0.3s;
+    position: sticky;
+    bottom: 0.5vh;
+    
+}
+#search:hover{
+    transform: scale(1.1);
+}
+#inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon{
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    right: 40%;
+    top: 35%;
+    transition: ease-in-out 0.2s;
+}
+.search-icon:hover{
+    transform: scale(1.1);
+}
+
+h1{
+    position: absolute;
+    top: 50vh;
+    z-index: 1;
+    right:25%;
+    font-size: 3em;
+}
+video{
+    
+    width: 100vw; 
+    height: 90vh; 
+    object-fit: cover; 
+    position: relative; 
+    top: 10vh;
+    box-shadow: 0 5vh 10vw;
+}
+
+
+.grid-container{
+    
+
+    height: 70vh;
+    width: 80vw;
+    display: grid;
+    gap: 5%;
+    position: relative;
+    margin-top: 13vh;
+    top: auto;
+   left: calc(50% - 40vw);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.first{
+
+    background-color: #a9acb67b;
+    border-radius: 2em;
+    grid-area: 1/1/3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative ;
+    transition: ease-in-out 0.2s;
+}
+.first:hover{
+    transform: scaleX(1.1);
+}
+
+#iphone{
+    bottom: 5%;
+    position: relative;
+    width: 50%;
+    height: 20%;
+    height: auto;
+    border-radius: 1em;
+    color: black;
+}
+
+
+.second{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+    background-color: #a9acb67b;;
+    border-radius: 2em;
+    grid-area: 1/2/3/3;
+    transition: ease-in-out 0.2s;
+}
+
+.second:hover{
+    transform: scaleX(1.1);
+}
+
+.second img{
+    width: 50%;
+    position: relative;
+    left: 27%;
+   top: 1vh;
+
+}
+#laptop-name{
+    position: relative;
+    bottom: 9vh;
+}
+
+#laptop-price{
+    position: relative;
+    bottom: 9vh;
+}
+#deal{
+    position: relative;
+    top: -28vh ;
+    left: -15vw;
+    width: 5vw;
+    height: 5vw;
+    min-height: 5vw ;
+}
+.second button{
+    position: relative;
+    bottom: 5vh;
+}
+
+.third{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #a9acb67b;;
+    border-radius: 2em;
+    grid-area: 1/3/3/4; 
+    transition: ease-in-out 0.2s;
+}
+.third:hover{
+    transform: scaleX(1.1);
+}
+
+.third img{
+    min-width: 10vw;
+    min-height: 20vh;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    bottom: 3vh;
+}
+
+.third span{
+    position: relative;
+    bottom: 5vh;
+}
+
+.third button{
+    position: relative;
+    bottom: 4vh;
+}
+
+.footer-flex{
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+    bottom:1vh ;
+    margin-top: 2% ;
+    color: whitesmoke;
+    right: 2%;
+    
+}
+
+.footer-flex a{
+    color: whitesmoke;
+    text-decoration: dashed;
+}
+
+.footer-flex a:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+footer span{
+    font-size: small;
+}
+span b{
+    position: relative;
+    bottom: 8vh;
+}
+
+#price{
+    position: relative;
+    bottom: 10vh;
+    color: rgb(255, 255, 255);
+}
+
+span b{
+    color:rgb(255, 255, 255);
+}
+
+button {
+    color: white;
+    width: 10vw;
+    height: 7vh;
+    border: 1px solid gray;
+    border-radius: 5%;
+    transform: scale(1.1);
+    background-position: 0 -30px;
+    background: linear-gradient(to left, rgb(113, 113, 113) 50%, rgb(81, 81, 81) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+  
+
+}
+
+button:hover{
+    background-position: left;
+}
+
+
+@media (max-width: 480px)  {
+
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+       
+    }
+   #move-des{
+    bottom: 10%;
+    transition: 0.2 ease-in-out;
+    }
+    #move-des:hover{
+        transform: scale(1.2);
+    }
+    
+    #nav {
+      flex-direction: column;
+      align-items: center;
+      
+      height: auto;
+      
+    }
+  
+    #item-search {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+  
+    #search {
+      width: 100%;
+    }
+  
+    .search-icon {
+      right: 10%;
+      top: 55%;
+    }
+  
+    #move-des {
+      position: static;
+      margin-top: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+      top: 20vh;
+      right: auto;
+    }
+  
+    video {
+      height: 25vh;
+    }
+  
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      min-height: 100vh; 
+     gap: 7px;
+    }
+  
+    .first{
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        
+    }
+    .first b{
+        position: relative;
+        top: 0%;
+    }
+ 
+    #iphone{
+        position: relative;
+        top: 1%;
+        width: 90px;
+        height: 90px;
+    }
+    .second{
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        
+    }
+
+    .second b{
+        position: relative;
+        top:7vh;
+       }
+       .second button{
+        position: relative;
+        bottom: 1.5vh;
+       }
+
+       #deal{
+        position: absolute;
+        top: 12px;
+        left: 20px;
+       }
+
+    .third{
+        width: 100%;
+        height: 35vh;
+        position: relative;
+        
+    }
+    .third img{
+        position: relative;
+        top: 1%;
+    }
+    .third b{
+        position: relative;
+        top: 8%;
+    }
+    
+    span b {
+      font-size: 1rem;
+    }
+  
+    button {
+      width: 80%;
+      height: 6vh;
+      font-size: 0.9rem;
+    }
+  
+   
+    .footer-flex {
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      
+      justify-content: flex-start;
+    }
+    
+    .footer-flex a {
+      margin: 0.5rem 0;
+    }
+
+    footer span{
+        font-size: smaller;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px)  {
+
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+       
+    }
+    
+    h1{
+        position: relative;
+        inset: 0%;
+    }
+    
+    #nav {
+      flex-direction: column;
+      align-items: center;
+      
+      height: auto;
+      
+    }
+  
+    #item-search {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+  
+    #search {
+      width: 100%;
+    }
+  
+    .search-icon {
+      right: 10%;
+      top: 55%;
+    }
+  
+    #move-des {
+      position: static;
+      margin-top: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+      top: 20vh;
+      right: auto;
+    }
+  
+    video {
+      height: 25vh;
+    }
+  
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      min-height: 100vh; 
+     gap: 7px;
+    }
+  
+    .first{
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        
+    }
+    .first b{
+        position: relative;
+        top: 0%;
+    }
+ 
+    #iphone{
+        position: relative;
+        top: 1%;
+        width: 90px;
+        height: 90px;
+    }
+    .second{
+        width: 100%;
+        height: 32vh;
+        position: relative;  
+    }
+    .second #img2{
+        position: absolute;
+        bottom: 22vh;
+        right: 38vw;
+        width: 10vw;
+        height: 10vw;
+    }
+    .second img{
+        position: relative;
+        width: 14vw;
+        height: 14vw;
+    }
+    
+       .second button{
+
+        position: relative;
+        bottom: 1.5vh;
+       }
+       #laptop-name{
+        position: relative;
+        top: 15vh;
+       }
+       #laptop-price{
+        position: relative;
+        top: 12vh;
+       }
+       .second button{
+        position: relative;
+        top: 1vh;
+       }
+       #deal{
+        position: absolute;
+        top: 12px;
+        left: 20px;
+       }
+
+    .third{
+        width: 100%;
+        height: 35vh;
+        position: relative;
+        
+    }
+    .third img{
+        width: 30vw;
+        height: 25vw;
+        position: relative;
+       top: 0.5vh;
+    }
+
+    #razer-name{
+        position: relative;
+        top: 5vh;
+    }
+    #razer-price{
+        position: relative;
+        top: 5vh;
+    }
+
+    .third button{
+        position: relative;
+        bottom: 1vh ;
+        
+    }
+    button {
+      width: 10vw;
+      height: 6vh;
+      font-size: 0.8rem;
+    }
+  
+   
+    .footer-flex {
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+
+      justify-content: flex-start;
+    }
+    
+    .footer-flex a {
+      margin: 0.5rem 0;
+    }
+
+    footer span{
+        font-size: smaller;
+    }
+
+}
+
