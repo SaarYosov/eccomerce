@@ -249,7 +249,6 @@ video{
 
 .footer-flex a:hover{
     transform: scale(1.1);
-    color: whitesmoke;
 }
 footer span{
     font-size: small;
